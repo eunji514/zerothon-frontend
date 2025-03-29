@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Post from "./pages/post"; // 이게 너의 게시글 페이지
+import Post from "./pages/post";
+import WritePost from "./pages/writePost";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/post" element={<Post />} />
+        <Route path="/write" element={<WritePost />} />
       </Routes>
     </Router>
   );
