@@ -1,0 +1,90 @@
+.home-wrapper {
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  padding-bottom: 100px; /* ✅ 하단바 공간 확보 */
+}
+
+/* 검색창 */
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+/* 카테고리 */
+.categories {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.category-tag {
+  font-size: 14px;
+  padding: 6px 12px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* 게시물 카드 */
+.post-card {
+  border-bottom: 1px solid #eee;
+  padding: 16px 0;
+}
+
+.post-header {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.post-title {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.post-content {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.post-stats {
+  font-size: 13px;
+  color: #777;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 8px 0;
+}
+.category-tag.active {
+  background-color: #2419ee;
+  color: white;
+  font-weight: bold;
+}
+.my-linkus-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.my-linkus-bar button {
+  background-color: #2419ee;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}

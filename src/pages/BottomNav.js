@@ -8,7 +8,7 @@ export default function BottomNav() {
   return (
     <div className="bottom-nav">
       <button onClick={() => navigate("/write")}>✍️</button>
-      <button onClick={() => navigate("/")}>🏠</button>
+      <button onClick={() => navigate("/home")}>🏠</button>
       <button onClick={() => navigate("/mypage")}>🙋‍♂️</button>
     </div>
   );
