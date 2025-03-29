@@ -1,0 +1,81 @@
+.join-wrapper {
+  padding: 24px;
+  font-family: "Arial";
+  text-align: center;
+  min-height: 100vh;
+}
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.interest-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.interest-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.interest-label {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.next-btn {
+  margin-top: 12px;
+  background: #2419ee;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo-img {
+  width: 160px; /* ✅ 더 크게! */
+  margin-bottom: 30px;
+}
+.center p {
+  font-size: 22px; /* ✅ 기존보다 훨씬 큼 */
+  font-weight: 600;
+  color: #000000; /* ✅ 포인트 컬러 */
+}

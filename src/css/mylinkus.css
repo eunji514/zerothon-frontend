@@ -1,0 +1,56 @@
+.mylinkus-wrapper {
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  padding-bottom: 100px;
+}
+
+/* 상단바 */
+.top-bar {
+  position: sticky;
+  top: 0;
+  background: #2419ee;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  z-index: 10;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.top-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 크루 카드 리스트 */
+.crew-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.crew-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #fafafa;
+}
+
+.crew-card h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.crew-card p {
+  font-size: 14px;
+  color: #444;
+}

@@ -1,0 +1,38 @@
+.splash-container {
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.splash-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 문구 */
+.subtitle {
+  font-size: 22px; /* ← 원래 16px → 업그레이드! */
+  color: #2419ee;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+/* 아이콘 */
+.splash-icon {
+  font-size: 80px; /* ← 원래 48px → 크고 굵게! */
+  color: #2419ee;
+  margin: 10px 0;
+}
+
+/* Linkus 브랜드명 */
+.brand {
+  font-size: 48px; /* ← 원래 32px → 시원하게 키움! */
+  font-weight: 700;
+  color: #2419ee;
+  font-style: italic;
+  margin-top: 12px;
+}
