@@ -1,0 +1,95 @@
+.post-wrapper {
+  padding: 0 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+  padding-bottom: 80px; /* ✅ 네비게이션 바 공간 확보 */
+}
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw; /* 화면 전체 너비 */
+  background: #2419ee;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  z-index: 10;
+  color: white;
+  margin-left: calc(-1 * (100vw - 100%)); /* 브라우저 스크롤 생길 때 대비 */
+}
+
+/* 뒤로가기 버튼 */
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 12px;
+  color: white;
+}
+
+/* 상단 타이틀 */
+.top-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* 게시글 전체 박스 */
+.post-box {
+  padding: 30px 0;
+}
+
+/* 게시글 제목 */
+.post-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 작성자, 날짜 */
+.post-meta {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* 게시글 내용 */
+.post-content {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  white-space: pre-line;
+  color: #333;
+}
+
+/* 좋아요 / 댓글 수 */
+.post-stats {
+  font-size: 14px;
+  color: #555;
+}
+
+/* 구분선 */
+.divider {
+  margin: 40px 0 30px 0;
+  height: 1px;
+  background-color: #eee;
+  border: none;
+}
+
+/* 댓글 섹션 제목 */
+.comment-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* 댓글 하나 */
+.simple-comment {
+  font-size: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333;
+}

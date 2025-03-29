@@ -1,0 +1,71 @@
+/* 기본 마이페이지 */
+.mypage-wrapper {
+  min-height: 100vh; /* ✅ 최소 화면 높이 확보 */
+  padding: 0 20px;
+  font-family: "Arial", sans-serif;
+  padding-bottom: 100px; /* ✅ 바가 가려지지 않도록 여유 공간 */
+  box-sizing: border-box;
+}
+
+/* 상단바 */
+.top-bar {
+  position: sticky;
+  top: 0;
+  background: #2419ee;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  z-index: 10;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.top-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* 사용자 정보 */
+.user-info {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 2;
+  color: #333;
+}
+
+/* 구분선 */
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #eee;
+  margin: 30px 0;
+}
+
+/* 설정 메뉴 */
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.setting-item {
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.setting-item.logout {
+  color: #e53935;
+  font-weight: bold;
+}
