@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/post.css";
+import BottomNav from "./BottomNav";
 
 const post = {
   title: "한강 러닝 크루 함께하실 분!",
@@ -27,39 +28,44 @@ export default function Post() {
   const navigate = useNavigate();
 
   return (
-    <div className="post-wrapper">
-      {/* 상단바 */}
-      <div className="top-bar">
-        <button className="back-btn" onClick={() => navigate(-1)}>
-          ←
-        </button>
-        <h2 className="top-title">게시글</h2>
-      </div>
-
-      {/* 게시글 */}
-      <div className="post-box">
-        <h1 className="post-title">{post.title}</h1>
-        <div className="post-meta">
-          <span className="author">{post.author}</span> ·{" "}
-          <span className="date">{post.date}</span>
+    <>
+      <div className="post-wrapper">
+        {/* 상단바 */}
+        <div className="top-bar">
+          <button className="back-btn" onClick={() => navigate(-1)}>
+            ←
+          </button>
+          <h2 className="top-title">게시글</h2>
         </div>
-        <div className="post-content">{post.content}</div>
-        <div className="post-stats">
-          ❤️ 좋아요 {post.likes}개 &nbsp;&nbsp; 💬 댓글 {post.commentCount}개
-        </div>
-      </div>
 
-      <hr className="divider" />
-
-      {/* 댓글 섹션 */}
-      <div className="comment-section">
-        <h3>댓글</h3>
-        {comments.map((comment, index) => (
-          <div className="simple-comment" key={index}>
-            <strong>{comment.name}</strong>: {comment.content}
+        {/* 게시글 */}
+        <div className="post-box">
+          <h1 className="post-title">{post.title}</h1>
+          <div className="post-meta">
+            <span className="author">{post.author}</span> ·{" "}
+            <span className="date">{post.date}</span>
           </div>
-        ))}
+          <div className="post-content">{post.content}</div>
+          <div className="post-stats">
+            ❤️ 좋아요 {post.likes}개 &nbsp;&nbsp; 💬 댓글 {post.commentCount}개
+          </div>
+        </div>
+
+        <hr className="divider" />
+
+        {/* 댓글 섹션 */}
+        <div className="comment-section">
+          <h3>댓글</h3>
+          {comments.map((comment, index) => (
+            <div className="simple-comment" key={index}>
+              <strong>{comment.name}</strong>: {comment.content}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+
+      {/* ✅ 바깥에 둬야 고정됨 */}
+      <BottomNav />
+    </>
   );
 }

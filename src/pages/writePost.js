@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/write.css";
+import BottomNav from "./BottomNav";
 
 export default function WritePost() {
   const [title, setTitle] = useState("");
@@ -68,6 +69,7 @@ export default function WritePost() {
           </select>
         </div>
       </div>
+      <BottomNav />
     </div>
   );
 }
